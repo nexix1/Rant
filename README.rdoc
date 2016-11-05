@@ -1,3 +1,5 @@
 == README
 
 This app is a blog for ranting
+
+* Added in language translation feature via i18n
