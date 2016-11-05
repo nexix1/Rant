@@ -22,9 +22,9 @@
 		</ul>
 
 		<ul>
-			<li class="category">Social</li>
-			<li></li>  
-			<li></li>
+			<li class="category">Languages</li>
+			<li><%= link_to_unless_current "English", locale: "en" %></li>  
+			<li><%= link_to_unless_current "Ending in O", locale: "o" %></li>
 			<li></li>
 			<li></li>
 		</ul>
@@ -37,7 +37,7 @@
 	<div id="main_content">
 		<div id="header">
 			<% if current_page?(root_path) %>
-				<p>All Posts</p>
+				<p><%= t ".title" %></p>
 				<% elsif current_page?(about_path) %>
 					<p>About</p>
 				<% else %>
