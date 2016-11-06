@@ -36,13 +36,7 @@
 
 	<div id="main_content">
 		<div id="header">
-			<% if current_page?(root_path) %>
-				<p><%= t ".title" %></p>
-				<% elsif current_page?(about_path) %>
-					<p>About</p>
-				<% else %>
-					<%= link_to "Back to All Posts", root_path %>
-			<% end %>
+			<p><%= t "layouts.application.title" %></p>
 
 			<% if user_signed_in? %>
 			<div class="buttons">

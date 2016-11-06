@@ -8,4 +8,10 @@ private
 	def set_locale
 		I18n.locale = params[:locale] if params[:locale].present?
 	end
+
+	#method to help route the i18n to persist in url
+	def default_url_options(options = {})
+		#automatically set this when generating url
+		{locale: I18n.locale}
+	end
 end
