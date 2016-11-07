@@ -12,27 +12,27 @@ This app is a blog for ranting
 
 * for static text: 
 
-'''	
+```	
 <%= t "layouts.index.title" %>
-'''
+```
 
   this is the path you set in the .yml file you would want to refer to which is the same in the translated language .yml file
 
 * for static link text:
 
-'''
+```
 <%= link_to path %>..
 	<%= t "layout.index.link_to_log_out" %>
 <% end %>
-'''
+```
 
 * for attributes in models
 
   in the wanted translated file (i.e. es.yml)
 
-'''
+```
 	activerecords:
 		attributes:
 			model_name:
 				key_name: "translation of the key's name"
-'''
+```
