@@ -1,0 +1,41 @@
+esgt: 
+  layouts:
+    application:
+      header1: "SITIO WEB" 
+      title: "Despotricar"
+      link_to_blog: "Blog"
+      link_to_about: "Biografía"
+      link_to_new_post: "Nueva Publicación"
+      link_to_log_out: "Finalizar la Sesión"
+  posts:
+    index:
+      titles: "Todos los mensajes"
+    new:
+      header: "Nueva Publicación"
+    edit:
+      header: "editar"
+    show:
+      header2: "Commentarios"
+      header3: "Añadir un comentario:"
+      link_to_edit: "Editar"
+      link_to_delete: "Borrar"
+  comments: 
+    comment:
+      delete: "Borrar"
+  pages:
+    about:
+      h1: "Hola, mi nombre es Joe"
+      p1: "Bienvenido a mi blog"
+      p2: "Me gusta despotricar"
+      p3: "Hazme saber lo que piensas o tienes cualquier tema sobre el que pueda tener una opinión sobre"
+  # translating attributes in models
+  activerecord:
+    attributes:
+      #comment model
+      comment:
+        name: "Nombre"
+        body: "contenido"
+      #post model
+      post:
+        title: "título"
+        body: "contenido"

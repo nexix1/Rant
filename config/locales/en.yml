@@ -22,10 +22,27 @@
 en:
   layouts:
     application: 
+      header1: "WEBSITE"
       title: "Rants"
+      link_to_blog: "Blog"
+      link_to_about: "About"
+      link_to_new_post: "New Post"
+      link_to_log_out: "Log Out"
   posts:
     index:
       titles: "All Posts"
+    new:
+      header: "new post"
+    edit:
+      header: "edit"
+    show:
+      header2: "Comments"
+      header3: "Add a comment:"
+      link_to_edit: "Edit"
+      link_to_delete: "Delete"
+  comments: 
+    comment:
+      delete: "Delete"
   pages:
     about:
       h1: "Hi I'm Joe"

@@ -16,15 +16,23 @@
 		</div>
 
 		<ul>
-			<li class="category">Website</li>
-			<li><%= link_to "Blog", root_path %></li>
-			<li><%= link_to "About", about_path %></li>
+			<li class="category"><%= t "layouts.application.header1" %></li>
+			<li>
+				<%= link_to root_path do %>
+					<%= t "layouts.application.link_to_blog" %>
+				<% end %>
+			</li>
+			<li>
+				<%= link_to about_path do %>
+					<%= t "layouts.application.link_to_about" %>
+				<% end %>
+			</li>
 		</ul>
 
 		<ul>
 			<li class="category">Languages</li>
 			<li><%= link_to_unless_current "English", locale: "en" %></li>  
-			<li><%= link_to_unless_current "Ending in O", locale: "o" %></li>
+			<li><%= link_to_unless_current "Espanol - Google Translate", locale: "esgt" %></li>
 			<li></li>
 			<li></li>
 		</ul>
@@ -40,8 +48,16 @@
 
 			<% if user_signed_in? %>
 			<div class="buttons">
-				<button class="button"><%= link_to "New Post", new_post_path %></button>
-				<button class="button"><%= link_to "Log Out", destroy_user_session_path, :method => :delete, data: { confirm: "Are you sure you want to log out?" }%></button>
+				<button class="button">
+					<%= link_to new_post_path do %>
+						<%= t "layouts.application.link_to_new_post" %>
+					<% end %>
+				</button>
+				<button class="button">
+					<%= link_to destroy_user_session_path, :method => :delete, data: { confirm: "Are you sure you want to log out?" } do %>
+						<%= t "layouts.application.link_to_log_out" %>
+					<% end %>
+				</button>
 			</div>
 			<% end %>
 		</div>
