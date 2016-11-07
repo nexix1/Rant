@@ -14,8 +14,9 @@ This app is a blog for ranting
 
 * To add in a new translation/.yml file
   1. create .yml file under config>locales
-  2. copy paths from en.yml that you want to translate in view
-  3. add in translation for each path to what is in view.  
+  2. add in new translation path of .yml you created, follow example in starting on line 35 in layouts>application.html.erb
+  3. copy paths from en.yml that you want to translate in view
+  4. add in translation for each path to what is in view.  
 
 * for static text: 
 
