@@ -7,6 +7,7 @@ esgt:
       link_to_about: "Biografía"
       link_to_new_post: "Nueva Publicación"
       link_to_log_out: "Finalizar la Sesión"
+      admin_login: "Administración iniciar sesión"
   posts:
     index:
       titles: "Todos los mensajes"
@@ -28,14 +29,22 @@ esgt:
       p1: "Bienvenido a mi blog"
       p2: "Me gusta despotricar"
       p3: "Hazme saber lo que piensas o tienes cualquier tema sobre el que pueda tener una opinión sobre"
+  devise:
+    sessions:
+      new:
+        header: "Iniciar sesión"
   # translating attributes in models
   activerecord:
     attributes:
       #comment model
       comment:
         name: "Nombre"
-        body: "contenido"
+        body: "Contenido"
       #post model
       post:
-        title: "título"
-        body: "contenido"
+        title: "Título"
+        body: "Contenido"
+      user: 
+        email: "Correo electrónico"
+        password: "Contraseña"
+        remember_me: "Recuérdame"

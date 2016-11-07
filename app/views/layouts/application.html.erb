@@ -39,7 +39,8 @@
 		</ul>
 
 		<% if !user_signed_in? %>
-			<p class="sign_in"><%= link_to "Admin Login", user_session_path %></p>
+			<p class="sign_in">
+				<%= link_to "Admin Login", user_session_path %></p>
 		<% end %>
 	</div>
 

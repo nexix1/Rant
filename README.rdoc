@@ -6,6 +6,8 @@ This app is a blog for ranting
 
 * Added in i18n method in Application Controller to pass through params locale
 
+* Implemented and translated the "About" page
+
 * Added in list of languages to select in Layouts selection by selecting locale
 
 * Created path in en.yml and in the desired language (i.e. es.yml for spanish)

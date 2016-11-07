@@ -49,3 +49,9 @@ en:
       p1: "Welcome to my blog"
       p2: "I like to rant"
       p3: "Let me know what you think or have any topics I might have an opinion on."
+  devise:
+    sessions:
+      new:
+        header: "Log In"
+    shared:
+      link_to_log_in: "Log In"
