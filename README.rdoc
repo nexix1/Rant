@@ -10,6 +10,13 @@ This app is a blog for ranting
 
 * Created path in en.yml and in the desired language (i.e. es.yml for spanish)
 
+* Created "esgt.yml" for test under confib>locales
+
+* To add in a new translation/.yml file
+  1. create .yml file under config>locales
+  2. copy paths from en.yml that you want to translate in view
+  3. add in translation for each path to what is in view.  
+
 * for static text: 
 
   <%= t "layouts.index.title" %>
