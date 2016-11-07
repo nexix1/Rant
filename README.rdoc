@@ -12,7 +12,7 @@ This app is a blog for ranting
 
 * Created "esgt.yml" for test under confib>locales
 
-* To add in a new translation/.yml file
+* To add in a new translation .yml file
   1. create .yml file under config>locales
   2. add in new translation path of .yml you created, follow example in starting on line 35 in layouts>application.html.erb
   3. copy paths from en.yml that you want to translate in view
